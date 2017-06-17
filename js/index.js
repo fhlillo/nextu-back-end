@@ -56,11 +56,12 @@ playVideoOnScroll();
 $(document).ready(function(){
 	$("#mostrarTodos").click(function(){
 		$.ajax({
-			url:"function.php",
+			url:"listar.php",
 			data:{},
 			success: function(data){
 				$(".colContenido").append(data);
 			}
 		});
 	});
+	 $('select').material_select();
 })

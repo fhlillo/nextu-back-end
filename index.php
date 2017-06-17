@@ -10,6 +10,7 @@
   <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formulario</title>
+  <?php include "function.php"; ?>
 </head>
 
 <body>
@@ -26,9 +27,9 @@
             <h5>Realiza una búsqueda personalizada</h5>
           </div>
           <div class="filtroCiudad input-field">
-            <label for="selectCiudad">Ciudad:</label>
+            <label for="selectCiudad">Ciudad:00</label>
             <select name="ciudad" id="selectCiudad">
-              <option value="" selected>Elige una ciudad</option>
+              <option value="1" diseable selected>Elige una ciudad</option>
             </select>
           </div>
           <div class="filtroTipo input-field">
@@ -54,6 +55,7 @@
         <div class="divider"></div>
         <button type="button" name="todos" class="btn-flat waves-effect" id="mostrarTodos">Mostrar Todos</button>
       </div>
+     <?php ?>
     </div>
   </div>
 
