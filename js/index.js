@@ -50,3 +50,17 @@ function playVideoOnScroll(){
 
 inicializarSlider();
 playVideoOnScroll();
+
+/*cargar php funcion mostrar*/
+
+$(document).ready(function(){
+	$("#mostrarTodos").click(function(){
+		$.ajax({
+			url:"function.php",
+			data:{},
+			success: function(data){
+				$(".colContenido").append(data);
+			}
+		});
+	});
+})

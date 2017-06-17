@@ -11,6 +11,9 @@ video#vidFondo {
 
 }
 
+body{
+	background-color: black;
+}
 .contenedor{
   background-color: rgba(242, 242, 242, 0.5);
   width: 80%;
@@ -132,6 +135,7 @@ video#vidFondo {
 }
 .itemMostrado img{
   width: 35% !important;
+  height: 100%;
 }
 .precioTexto{
   font-size: 1.3rem;
@@ -139,7 +143,9 @@ video#vidFondo {
 }
 .card-stacked{
   width: 65%;
+  padding: 20px;
 }
 .card-action{
   text-align: right;
+  margin-top: 20px;
 }

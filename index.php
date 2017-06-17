@@ -10,9 +10,6 @@
   <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formulario</title>
-  <?php 
-	include "function.php";
-	?>
 </head>
 
 <body>
@@ -55,10 +52,8 @@
       <div class="tituloContenido card">
         <h5>Resultados de la búsqueda:</h5>
         <div class="divider"></div>
-        <?php MostrarTodos(); ?>
         <button type="button" name="todos" class="btn-flat waves-effect" id="mostrarTodos">Mostrar Todos</button>
       </div>
-
     </div>
   </div>
 
