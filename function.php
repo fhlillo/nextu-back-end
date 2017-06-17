@@ -1,10 +1,10 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
-</head>
-
-<body>
-</body>
-</html>
+<?php
+function MostrarTodos(){
+	$data = file_get_contents("data-1.json");
+	$propiedades = json_decode($data, true);
+	
+	foreach ( $propiedades as $product ) {
+		print_r( $product );
+	}
+}
+?>
