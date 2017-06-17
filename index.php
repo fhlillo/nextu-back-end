@@ -27,15 +27,17 @@
             <h5>Realiza una búsqueda personalizada</h5>
           </div>
           <div class="filtroCiudad input-field">
-            <label for="selectCiudad">Ciudad:00</label>
+            <label for="selectCiudad">Ciudad:</label>
             <select name="ciudad" id="selectCiudad">
-              <option value="1" diseable selected>Elige una ciudad</option>
+              <option value="x" diseable selected>Elige una ciudad</option>
+              <?php Ciudad($propiedades); ?>
             </select>
           </div>
           <div class="filtroTipo input-field">
             <label for="selecTipo">Tipo:</label><br>
             <select name="tipo" id="selectTipo">
-              <option value="" selected>Elige un tipo</option>
+              <option value="x" selected>Elige un tipo</option>
+              <?php Tipo($propiedades); ?>
             </select>
           </div>
           <div class="filtroPrecio">
