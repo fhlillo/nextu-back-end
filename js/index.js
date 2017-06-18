@@ -59,9 +59,24 @@ $(document).ready(function(){
 			url:"listar.php",
 			data:{},
 			success: function(data){
+		    	$(".itemMostrado").remove();
 				$(".colContenido").append(data);
 			}
 		});
 	});
-	 $('select').material_select();
+	$('select').material_select();
+	$("#formulario").submit(function(event){
+		var ciudad = $("#selectCiudad").val();
+		var Tipo = $("#selectTipo").val();
+		var Precio = $("#rangoPrecio").val();
+		event.preventDefault();
+		$.ajax({
+			url:"buscador.php",
+			type:"POST",
+			data:{ciudad:ciudad, Tipo: Tipo, Precio: Precio}
+		}).done(function(data){
+			$(".itemMostrado").remove();
+			$(".colContenido").append(data);
+		})
+	})
 })
